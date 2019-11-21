@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Register</title>
+
+</head>
+<body>
+    
+    <header class='conatainer-1'>
+
+        <img src="Sports_Banner.png" alt="Sports Banner with athletes running">
+
+    </header>
+
+    <main class='container-2'>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col"></div>
+
+                <div class="col-10">
+                    
+                    <div class="row">
+                    
+                        <div class="col">
+                   
+                            <form id="regForm" action="confirm.html" method="POST">
+
+                                <h1>Register:</h1>
+
+                                <div class='tab'>
+                    
+                                    <div class="form-group">
+                                        <label for="adharnumber">Aadhar Number</label>
+                                        <input type="text" class="form-control" id="adharnumber" placeholder="1234 5678 3456" max="14" oninput="this.className = ''">
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label for="playername">Name</label>
+                                        <input type="text" class="form-control" id="playername" placeholder="Full Name" oninput="this.className = ''">
+                                    </div>
+                        
+                                    <div class="form-group">
+                                        <label for="socialcategory">Category</label>
+                                        <select class="form-control" id="socialcategory" oninput="this.className = ''">
+                                            <option>GEN</option>
+                                            <option>OBC</option>
+                                            <option>SC/ST</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select class="form-control" id="gender" oninput="this.className = ''">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class='tab'>
+            
+                                    <div class="form-group">
+                                        <label for="">Physically Handicapped:</label>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="physicallyhandicapped" id="yes" value="yes" oninput="this.className = ''">
+                                            <label class="form-check-label" for="yes">Yes</label>
+                                        </div>
+                                        
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="physicallyhandicapped" id="no" value="no" oninput="this.className = ''">
+                                            <label class="form-check-label" for="no">No</label>
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="sportscategory">Sports Category</label>
+                                        <select class="form-control" id="sportscategory" oninput="this.className = ''">
+                                            <option>Hockey</option>
+                                            <option>Kabaddi</option>
+                                            <option>Running</option>
+                                            <option>Badminton</option>
+                                            <option>Squash</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="levelsports">Sports Level</label>
+                                        <select class="form-control" id="levelsports" oninput="this.className = ''">
+                                            <option>National</option>
+                                            <option>State</option>
+                                            <option>District</option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="pannumber">PAN (optional)</label>
+                                        <input type="text" class="form-control" id="pannumber" placeholder="ASDWR5478R" max="10" oninput="this.className = ''">
+                                    </div>
+
+                                </div>
+
+                                <div class='tab'>
+            
+                                    <div class="form-group">
+                                        <label for="permaadd">Permanent Address</label>
+                                        <textarea class="form-control" id="permaadd" rows="3" oninput="this.className = ''"></textarea>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="uniaadd">University/School Address</label>
+                                        <textarea class="form-control" id="uniaadd" rows="3" oninput="this.className = ''"></textarea>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="mobnumber">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobnumber" placeholder="+91 xxxxx xxxxx" max="15" oninput="this.className = ''">
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="Email">Email address</label>
+                                        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" oninput="this.className = ''">
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label for="attachment">Attach your Aadhaar Card (Optional)</label>
+                                        <input type="file" class="form-control-file" id="attachment" oninput="this.className = ''">
+                                    </div>
+
+                                </div>
+                    
+                                <div style="overflow:auto;">
+                                    <div style="float:right;">
+                                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    </div>
+                                </div>
+
+                                <div style="text-align:center;margin-top:40px;">
+                                    <span class="step"></span>
+                                    <span class="step"></span>
+                                    <span class="step"></span>
+                                    <span class="step"></span>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                        <div class='col guidelines'>
+
+                            <p><strong>Guidelines for Fiiling the Online Udyog Aadhaar Form:-</strong></p>
+
+                            <p class='notes'><strong>Note:</strong></p>
+
+                            <strong>
+
+                                <ol type='A' class='notes'>
+                                
+                                    <li>EM-I has been abolished. Need not file through Udyog Aadhaar.</li>
+                                    <li>Udyog Aadhaar (UA) is for running units. No need to apply for upcoming units.</li>
+                                    <li>New Feature Added for Search Facility of NIC Code to Avoid 3 Step Selection of NIC Activities.</li>
+                                    <li>OTP on Mobile (linked with Aadhaar) at the time of registration has been implemented.</li>
+                                </ol>
+                            </strong>
+                            
+                            <p><strong>1. Aadhaar Number</strong> - 12 digit Aadhaar number issued to the applicant should be filled in the appropriate field.</p>
+                            
+                            <p><strong>2. Name of Owner</strong>- The applicant should fill his/her name strictly as mentioned on the Aadhaar Card issued by UIDAI. E.g. if Raj Pal Singh has his name as Raj P. Singh, the same should accordingly be entered if the name does not match with the Aadhar Number, the applicant will not be able to fill the form further.</p>
+                            
+                            <strong>To Validate Aadhar:-</strong>
+
+                            <ol>
+                                <li><strong>Validate Aadhar-</strong> The applicant must click on Validate Aadhaar button for verification of Aadhaar, after that only user can fill the form further.</li>
+                                
+                                <li><strong>Reset-</strong> The applicant can click on reset button to clear the field of Aadhaar No and Name of the owner for different Aadhaar.</li>
+
+                            </ol>
+                            
+                            <p class='notes'><strong>OTP will be sent to your mobile number registred with UIDAI. If your mobile number is not registered with UIDAI, please follow instructions given on Pop up window.</strong></p>
+                            
+                            <p><strong>3. Social Category-</strong> The Applicant may select the Social Category (General, Scheduled Caste, Scheduled Tribe or Other Backward Castes (OBC). The proof of belonging to SC, ST or OBC may be asked by appropriate authority, if and when required.</p>
+                            
+                            <p><strong>4. Gender-</strong> The Applicant can select gender of Entrepreneur.</p>
+                            
+                            <p><strong>5. Physically Handicapped-</strong> The Applicant can select Physically Handicapped status of Entrepreneur.</p>
+                            
+                            <p><strong>6. Name of Enterprise-</strong> The Applicant must fill the name by which his/her Enterprise is known to the customers/public and is a legal entity to conduct business. One applicant can have more than one enterprises doing business and each one can be registered for a separate Udyog Aadhaar and with the same Aadhaar Number as Enterprise 1 and Enterprise 2 etc.
+                            Combination of same Aadhaar Number and Enterprise Name can be aadded second times. Only additinal details can be added or deleted at the time of editing.</p>
+                            
+                            <p><strong>7. Type of Organization-</strong> The Applicant may select from the given list the appropriate type of the organisation for his/her enterprise. The Applicant must ensure that he/she is authorised by the legal entity (i.e. enterprise being registered for Udyog Aadhaar) to fill this online form. Only one Udyog Aadhaar number shall be issued for each enterprise.</p>
+                            
+                            <p><strong>8. PAN Number-</strong> The Applicant have to enter PAN Number in case of Co Operative,Private Limited, Public Limited and Limited Liability Partnership It. Will be optinal in remaining type of Organisation.</p>
+                            
+                            <p><strong>9. Location of Plant-</strong> The Applicant may add multiple plant location in one registration by clicking Add Plant button.</p>
+                            
+                            <p><strong>10. Official Address-</strong> The Applicant should fill in the appropriate field the complete postal address of the Enterprise including State, District, Pin code, Mobile No and Email.</p>
+                            
+                            <p><strong>11. Date of Commencement-</strong> The date in the past on which the business entity commenced its operations may be filled in the appropriate field.</p>
+                            
+                            <p><strong>12. Previous Registration Details(if any)-</strong> If the Applicant's enterprise, for which the Udyog Aadhaar is being applied, is already issued a valid EM-I/II by the concerned GM (DIC) as per the MSMED Act 2006 or the SSI registration prevailing prior to the said Act, such number may be mentioned in the appropriate place.</p>
+                            
+                            <p><strong>13. Bank Details-</strong> The Applicant must provide his/her bank account number used for running the Enterprise in the appropriate place. The Applicant must also provide the IFS Code of the bank's branch where his/her mentioned account exists. The IFS code is now a days printed on the Cheque Books issued by the bank. Alternatively, if the Applicant knows the name of the Bank and the branch where his/her account is there, the IFSC code can be found from website of the respective Bank.</p>
+                            
+                            <p><strong>14. Major Activity-</strong><span class='notes'><strong> The major activity i.e. either "Manufacturing" or "Service" may be chosen by the enterprise for Udyog Aadhaar. If your enterprise involves in both type of activities and if major work involves in Manufacturing and small portion of activity involves in Service sector then select your major activity type as "Manufacturing" and if major work involves in Services and small portion of activity involves in Manufacturing then select your major activity type as "Services"</strong></span></p>
+                            
+                            <p><strong>15. National Industry Classification Code(NIC Code)-</strong> <span class='notes'><strong>The Applicant may choose multiple National Industrial Classification-2008 (NIC) Codes to includes all their activities. Which means user can select multiple NIC code of Manufacturing and Service sector by clicking "Add More" button.If you want to add Manufacturing then select "Manufacturing" radiobutton and keep on adding by clicking "Add More" button otherwise if you want to add Service then select "Services" radiobutton and keep on adding by clicking "Add More" button. The NIC codes are prepared by the Central Statistical Organisation (CSO) under the Ministry of Statistics and Program implementation, Government of India.</strong></span></p>
+                            
+                            <p class='notes'><strong>The Applicant may use National Industrial Classification-2008 (NIC) Codes searching facility to avoid 3 steps selection process.</strong></p>
+                            <p class='notes'><strong>Example: User has to write matching key word (2 or more characters) in Search text box in Column No 11 . Then all related NIC CODEs will be listed (including Nic 2 Digit, Nic 4 Digit & Nic 5 Digit) with code and description. If User selects NIC 5 Digit code, then automatically all the related fields(like NIC 2 Digit, 4 Digit, 5 Digit & Enterprise Type) at column 11 will be automatically filled. Same way, If user selects NIC 4 digit, then related field of 2 digit NIC Code will filled, but user has to select NIC 5 digit from drop down(In this case 2 steps are required).</strong></p>
+                            
+                            <p><strong>16. Person employed-</strong> The total number of people who are directly been paid salary/ wages by the enterprise may be mentioned in the appropriate field.</p>
+                            
+                            <p><strong>17. lnvestment in Plant & Machinery / Equipment-</strong> While computing the total investment , the original investment ( purchase value of items) is to be taken into account excluding tho cost of pollution control, research and development, industrial safety devices, and such other items as may be specified, by notification of RBI. If an enterprise started with a set of plant and machinery purchased in 2008 worth Rs. 70.00 lakh has procured additional plant and machinery in the year 2013 worth Rs. 65.00 lakh, then the total investment in Plant & Machinery may be treated as Rs. 135.00 lakh.</p>
+                            
+                            <p><strong>18. DIC-</strong> The Applicant, based on the location of the Enterprise, has to fill in location of DIC. This Column will be active and show option only when there are more than one DIC in the district. In fact if there is only one DIC in the district system will automatically register you in the same DIC.</p>
+                            
+                            <p><strong>19. Submit-</strong> The Applicant must click on Submit button to generate OTP which will be sent to email id mentioned for registration.</p>
+                            
+                            <p><strong>20. The Applicant have to enter OTP received on mobile (linked with Aadhaar) second time.</strong></p>
+                            
+                             <p><strong>21. Enter Captcha- The Applicant must enter Captcha before clicking Final Submit button.</strong></p>                       
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col"></div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+</body>
+</html>
