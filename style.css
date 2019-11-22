@@ -143,5 +143,9 @@ button:hover {
   .col-10, .col {
     padding: unset;
   }
+  
+  .guidelines {
+     padding: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
