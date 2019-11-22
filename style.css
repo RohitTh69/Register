@@ -138,4 +138,10 @@ button:hover {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 384px) {
+  .col-10, .col {
+    padding: unset;
+  }
+}
 /*# sourceMappingURL=style.css.map */
