@@ -118,4 +118,14 @@ button:hover {
     margin: -4rem auto;
   }
 }
+
+@media screen and (max-width: 600px) {
+  #regForm {
+    margin: 3rem auto;
+  }
+  
+  #regForm h1 {
+    font-size: 2.25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
