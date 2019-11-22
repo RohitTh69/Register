@@ -112,4 +112,10 @@ button:hover {
   background-color: RoyalBlue;
   color: #fff;
 }
+
+@media screen and (max-width: 991px) {
+  .guidelines {
+    margin: 2rem auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
