@@ -42,7 +42,7 @@
                     
                                     <div class="form-group">
                                         <label for="adharnumber">Aadhar Number</label>
-                                        <input type="text" class="form-control" id="adharnumber" placeholder="1234 5678 3456" max="14" oninput="this.className = ''">
+                                        <input type="tel" class="form-control" id="adharnumber" placeholder="Format: 1234-5678-9012" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" minlength="14" maxlength="14" oninput="this.className = ''">
                                     </div>
                         
                                     <div class="form-group">
@@ -107,7 +107,7 @@
                 
                                     <div class="form-group">
                                         <label for="pannumber">PAN</label>
-                                        <input type="text" class="form-control" id="pannumber" placeholder="ASDWR5478R" max="10" oninput="this.className = ''">
+                                        <input type="text" class="form-control" id="pannumber" placeholder="ASDWR5478R" min="10" max="10" oninput="this.className = ''">
                                     </div>
 
                                 </div>
@@ -126,7 +126,7 @@
                 
                                     <div class="form-group">
                                         <label for="mobnumber">Mobile Number</label>
-                                        <input type="tel" class="form-control" id="mobnumber" placeholder="+91 xxxxx xxxxx" max="15" oninput="this.className = ''">
+                                        <input type="tel" class="form-control" id="mobnumber" placeholder="Format: +91-12345-76890" pattern="[+][0-9]{2}-[0-9]{5}-[0-9]{5}" minlength="15" maxlength="15" oninput="this.className = ''">
                                     </div>
                 
                                     <div class="form-group">
