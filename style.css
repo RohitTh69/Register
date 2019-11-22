@@ -127,5 +127,15 @@ button:hover {
   #regForm h1 {
     font-size: 2.25rem;
   }
+  
+  .guidelines {
+    margin: -1rem auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   #regForm h1 {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
