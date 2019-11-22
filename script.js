@@ -13,7 +13,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Submit";
-    document.getElementById("nextBtn").onclick="window.location.href = 'https://rohitth69.github.io/Register/confirm';
+//     document.getElementById("nextBtn").onclick="window.location.href = 'https://rohitth69.github.io/Register/confirm';
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
