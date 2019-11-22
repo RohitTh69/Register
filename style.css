@@ -37,6 +37,10 @@ input, select, textarea {
   border: 1px solid #aaaaaa;
 }
 
+input#yes, input#no {
+  width: 1rem;
+}
+
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #ffdddd;
