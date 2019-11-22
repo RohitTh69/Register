@@ -7,6 +7,10 @@ body {
   background-color: #f1f1f1;
 }
 
+header.conatainer-1 {
+  text-align: center;
+}
+
 header img {
   max-width: 100%;
 }
