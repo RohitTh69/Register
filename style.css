@@ -148,4 +148,14 @@ button:hover {
      padding: 20px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  #regForm h1 {
+    font-size: 1.75rem;
+  }
+  
+  .guidelines p, .guidelines ol {
+      font-size: 0.9rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
